@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kehinde.alc.activities.DevelopersListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/cardview_light_background"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/dev_list_fragment"
+            android:name="com.kehinde.alc.fragments.DevelopersListFragment"
+            tools:layout="@layout/fragment_developers_list"
+            android:layout_width="0dp" />
+
+        <FrameLayout
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:id="@+id/detailContainer"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/instruction">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instruction"
+                    android:textAlignment="center"
+                    android:padding="16dp"/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

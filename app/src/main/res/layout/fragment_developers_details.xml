@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/subCoordLayout"
+    android:fitsSystemWindows="true">
+
+    <!--tools:context="com.kehinde.alc.activities.DevelopersDetailsActivity"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/devDetImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profile_avatar"
+            app:layout_anchorGravity="bottom|center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@emmanuelkehinde"
+                android:textColor="@color/txt_color_darker"
+                android:id="@+id/devDetUName"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://github.com/emmanuelkehinde"
+                android:textColor="#3f51b5"
+                android:id="@+id/devDetProfileUrl"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share Profile"
+                android:id="@+id/devShareBtn"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
